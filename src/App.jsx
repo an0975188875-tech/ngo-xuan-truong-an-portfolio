@@ -208,9 +208,23 @@ function App() {
       <footer className="py-12 text-center relative z-10 border-t border-white/10 bg-dark/50">
          <p className="text-gray-500 font-mono tracking-widest text-sm mb-6">SẴN SÀNG CHINH PHỤC THỬ THÁCH</p>
          <div className="flex justify-center gap-8">
-            <a href="#" className="text-gray-400 hover:text-neonBlue transition-colors font-mono text-sm tracking-wider">GITHUB</a>
-            <a href="#" className="text-gray-400 hover:text-neonBlue transition-colors font-mono text-sm tracking-wider">LINKEDIN</a>
-            <a href="mailto:email-cua-ban@gmail.com" className="text-gray-400 hover:text-neonBlue transition-colors font-mono text-sm tracking-wider">EMAIL</a>
+            {/* GITHUB */}
+            <a 
+              href="https://github.com/Ten-Tai-Khoan-Cua-Ban" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-gray-400 hover:text-neonBlue transition-colors font-mono text-sm tracking-wider"
+            >
+              GITHUB
+            </a>
+            
+            {/* EMAIL */}
+            <a 
+              href="mailto:25020438@vnu.edu.vn" 
+              className="text-gray-400 hover:text-neonBlue transition-colors font-mono text-sm tracking-wider"
+            >
+              EMAIL
+            </a>
          </div>
       </footer>
     </div>
