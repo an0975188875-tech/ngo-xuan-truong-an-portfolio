@@ -121,7 +121,7 @@ function App() {
             <div className="absolute inset-0 bg-gradient-to-br from-neonBlue to-purpleGlow rounded-full blur-xl opacity-40 group-hover:opacity-70 transition-opacity duration-500"></div>
             <div className="w-56 h-56 md:w-72 md:h-72 rounded-full p-1 bg-gradient-to-br from-neonBlue via-indigo to-purpleGlow relative z-10">
               <img 
-                src="/avatar.jpg" 
+                src="/avatar-vest.jpg" 
                 alt="Avatar Ngô Xuân Trường An" 
                 className="w-full h-full object-cover rounded-full border-4 border-dark bg-dark"
                 onError={(e) => {
