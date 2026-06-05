@@ -71,25 +71,38 @@ function App() {
 
       {/* SECTION 1: HERO */}
       <section className="h-screen flex flex-col items-center justify-center text-center p-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-indigo/10 to-dark/90 z-0"></div>
-        <div className="z-10 mt-10">
-          <div className="animate-pulse mb-6 text-neonBlue font-mono text-sm border border-neonBlue/30 inline-block px-4 py-1 rounded-full bg-neonBlue/10">
-            KÍCH HOẠT HỒ SƠ NĂNG LỰC SỐ
+        
+        {/* LỚP NỀN ĐỘNG (BACKGROUND GIF) */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            // Bạn có thể đổi đường link trong ngoặc kép ở dưới thành bất kỳ ảnh/gif nào bạn thích
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80](https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80" 
+            alt="Hero Background" 
+            className="w-full h-full object-cover opacity-30 mix-blend-screen"
+          />
+          {/* Lớp phủ Gradient giúp mờ dần phần chân ảnh, hòa vào màu đen của trang web */}
+          <div className="absolute inset-0 bg-gradient-to-b from-dark/10 via-dark/60 to-dark"></div>
+        </div>
+
+        {/* NỘI DUNG CHÍNH (Đã được bọc thêm relative để luôn nổi lên trên ảnh nền) */}
+        <div className="z-10 mt-10 relative">
+          <div className="animate-pulse mb-6 text-neonBlue font-mono text-sm border border-neonBlue/30 inline-block px-4 py-1 rounded-full bg-neonBlue/10 shadow-[0_0_15px_rgba(34,211,238,0.2)]">
+            DIGITAL PORTFOLIO
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tighter drop-shadow-[0_0_15px_rgba(34,211,238,0.3)]">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tighter drop-shadow-[0_0_20px_rgba(34,211,238,0.5)]">
             NGÔ XUÂN <span className="text-neonBlue">TRƯỜNG AN</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto font-light">
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light drop-shadow-md">
             Kết nối sức mạnh giữa Phần cứng, Phần mềm và Trí tuệ Nhân tạo.
           </p>
-          <div className="mt-12 flex justify-center gap-12">
+          <div className="mt-12 flex justify-center gap-12 backdrop-blur-sm bg-black/20 py-4 px-8 rounded-2xl border border-white/5 inline-flex">
             <div className="text-center">
-              <div className="text-4xl font-bold text-neonBlue font-mono">06</div>
-              <div className="text-xs uppercase tracking-widest mt-1 opacity-50">Nhiệm Vụ</div>
+              <div className="text-4xl font-bold text-neonBlue font-mono drop-shadow-[0_0_10px_rgba(34,211,238,0.8)]">06</div>
+              <div className="text-xs uppercase tracking-widest mt-1 opacity-70">Nhiệm Vụ</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-purpleGlow font-mono">LV.18</div>
-              <div className="text-xs uppercase tracking-widest mt-1 opacity-50">Tuổi Đời</div>
+              <div className="text-4xl font-bold text-purpleGlow font-mono drop-shadow-[0_0_10px_rgba(139,92,246,0.8)]">LV.18</div>
+              <div className="text-xs uppercase tracking-widest mt-1 opacity-70">Tuổi Đời</div>
             </div>
           </div>
         </div>
@@ -208,22 +221,22 @@ function App() {
       <footer className="py-12 text-center relative z-10 border-t border-white/10 bg-dark/50">
          <p className="text-gray-500 font-mono tracking-widest text-sm mb-6">SẴN SÀNG CHINH PHỤC THỬ THÁCH</p>
          <div className="flex justify-center gap-8">
-            {/* GITHUB */}
+            {/* GITHUB : an0975188875-tech*/}
             <a 
-              href="https://github.com/Ten-Tai-Khoan-Cua-Ban" 
+              href="https://github.com/an0975188875-tech" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-neonBlue transition-colors font-mono text-sm tracking-wider"
             >
-              GITHUB
+              GITHUB : an0975188875-tech
             </a>
             
-            {/* EMAIL */}
+            {/* 25020438@vnu.edu.vn */}
             <a 
               href="mailto:25020438@vnu.edu.vn" 
               className="text-gray-400 hover:text-neonBlue transition-colors font-mono text-sm tracking-wider"
             >
-              EMAIL
+              25020438@vnu.edu.vn
             </a>
          </div>
       </footer>
